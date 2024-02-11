@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <h1 class="title">ToDo List</h1> 
+    <button class="add_new_todo">Добавить задачу</button>
+    <div class="todo_list">
+      <li class="li_item_todo">
+        <input contenteditable="true" type="text" class = "input_todo" placeholder="Введите сюда текст:">
+        <div class="button_del_select">
+          <select name="" id="" class="state-todo">
+            <option class="option_state_dis"  disabled selected>Состояние</option>
+            <option class="option_state" value="" >В процессе</option>
+            <option class="option_state" value="">Сделано</option>
+          </select>
+          <button class="delete-todo">Удалить</button>
+        </div>
+      </li>
+      <li class="li_item_todo">
+        <input contenteditable="true" type="text" class = "input_todo" value="Покормить кота 'Персика'">
+        <div class="button_del_select">
+          <select name="" id="" class="state-todo">
+            <option class="option_state_dis"  disabled selected>Состояние</option>
+            <option class="option_state" value="" selected>В процессе</option>
+            <option class="option_state" value="">Сделано</option>
+          </select>
+          <button class="delete-todo">Удалить</button>
+        </div>
+      </li>
+      <li class="li_item_todo">
+        <input contenteditable="true" type="text" class = "input_todo" value="Выгулять собаку 'Бобика'">
+        <div class="button_del_select">
+          <select name="" id="" class="state-todo">
+            <option class="option_state_dis"  disabled selected>Состояние</option>
+            <option class="option_state" value="">В процессе</option>
+            <option class="option_state" value="" selected>Сделано</option>
+          </select>
+          <button class="delete-todo">Удалить</button>
+        </div>
+      </li>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

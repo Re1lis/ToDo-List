@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    list-style-type: none !important;
+}
+
+body{
+    padding: 50px 5vw;
+    text-align: center;
+    background-color: gray;
+
+
+    .title{
+        margin-bottom: 10px;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+    
+    .add_new_todo{
+        height: 50px;
+        border-radius: 20px;
+        padding: 7px;
+        border: 1px solid black;
+        box-shadow:  0 0 10px black;
+        color: black;
+        background: white !important;
+        transition-duration: 0.2s;
+        margin-bottom: 15px;
+
+        &:active{
+            transform: scale(0.95)
+        }
+    }
+
+    .todo_list{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .li_item_todo{
+        border-radius: 20px;
+        padding: 10px;
+        height: 50px;
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        gap: 10px;
+
+        .input_todo{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            transition-duration: 0.2s;
+            width: 100%;
+            border: none !important;
+            color: black;
+            background: darkgray;
+            outline: none !important;
+            max-height: 30px;
+            padding-left: 10px;
+
+            &:focus{
+                box-shadow: inset 0 0 10px black;
+                border: none !important;
+                padding-left: 20px;
+                color: white;
+                border: 1px dashed white !important;
+            }
+        }
+
+        .button_del_select{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            .state-todo{
+                border-radius: 10px;
+                outline: none !important;
+                height: 25px;
+                box-shadow: 0 0 10px black;
+                transition-duration: 0.2s;
+
+                .option_state{
+                    color: white !important;
+                    background: purple;
+                }
+            }
+
+            .delete-todo{
+                padding: 5px;
+                height: 30px;
+                border-radius: 20px;
+                background: transparent !important;
+                color: white;
+                box-shadow:  0 0 20px red;
+                border: none !important;
+                outline: none !important;
+                transition-duration: 0.2s;
+
+                &:active{
+                    transform: scale(0.95);
+                    box-shadow: inset 0 0 10px dark;
+                    background: red !important;
+                    color: white;
+                }
+            }
+        }
+    }
+}
